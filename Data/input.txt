@@ -1,0 +1,50 @@
+In object detection problems, there are two familiar approaches known as One-Stage
+Detector and Two – Stage Detector. The two-stage object detection algorithm is known
+for its high accuracy and delivers impressive results when dealing with small objects. The
+two main tasks of two-stage object detection algorithms include region proposal and
+object classification. A famous representative of the group of two-stage object detection
+algorithms introduced earliest is R-CNN. R-CNN uses a selective search method to
+generate region proposals and then uses a CNN convolutional neural network to extract
+and classify features. There is no denying the incredible accuracy it brings, however, this
+model requires consuming a large amount of computing resources. Another innovation
+based on R-CNN is SPPNet (Spatial Pyramid Pooling Network). SPPNet works by
+receiving variable-sized input images and thereby reducing computational resources. Fast
+R-CNN has improved its architecture by directly using a region of interest (ROI) pooling
+layer. This greatly improves the speed and accuracy of the algorithm because it eliminates
+the need for external region proposal methods. Region Proposal Network (RPN)
+introduced by Faster R-CNN, a model that achieves a balance between accuracy and
+speed based on generating region proposals in the network and allowing it to train
+overview.
+Besides the benefits that two-stage object detection algorithms bring, they also have
+some limitations. Because these algorithms are often very complex in their calculations
+related to region proposal and object classification, the amount of resources and time
+consumed in this process is huge. This is also the reason why these algorithms are limited
+when used in real-time object recognition. Another problem is the instability in the region
+proposal generation process. Inconsistent selections can easily cause problems such as
+missing detections or false positives. In addition, small objects will cause difficulties for
+algorithms, leading to missed or incorrect location of objects.
+Because of some limitations of Two-Stage Detector algorithms when applied to realtime analysis, One-Stage Detector algorithms seem to be is a new and better direction for
+this. By simultaneously performing classification and localization in a single pass, it has
+demonstrated better speed and performance when applying real-time analysis and
+recognition.
+A famous representative of this group of algorithms is YOLO - You Only Look Once.
+In 2015, the YOLO algorithm was first introduced, also known as YOLOv1 – the first
+version of the YOLO model. YOLOv1's idea is to divide the image into grid cells,
+locating and classifying objects at the same time based on the anchor boxes assigned to8
+each grid cell. In exchange for shortening training and analysis time, its accuracy is
+reduced when having to identify small objects. YOLOv2 (2016) also known as
+YOLO9000, introduced that it improved the problem of small object detection through
+applying Darknet-19 backbone network and anchor box. YOLOv3 generates more anchor
+boxes and can detect multiple scales to improve detection accuracy. However, the new
+problem now is that the objects in the real situation are obscured. YOLOv4 has enhanced
+speed and accuracy by applying CIOU loss function, PANet and SAM module. With the
+application of such new technologies, YOLOv4 has to trade off complexity and resources
+for the computational phase. YOLOv5 uses a lightweight backbone network, combined
+with model compression techniques that optimize speed and accuracy. YOLOv6 uses the
+EfficientRep backbone, which enhances input representation and takes advantage of GPU
+efficiency. The disadvantage of YOLOv6 is the difficulty in detecting objects that are
+close together. YOLOv7 has improved the backbone to become EfficientNep – Lite – a
+network architecture with a lighter size. In addition, YOLOv7 also uses PANet to
+improve information fusion from different feature layers.
+In general, current object detection algorithms are a trade-off between accuracy and
+speed, depending on the appropriate use
